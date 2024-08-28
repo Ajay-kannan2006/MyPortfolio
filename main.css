@@ -1,0 +1,130 @@
+
+/* main nav_bar  */
+.nav {
+    height: 80px;
+    width: 90%;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: from-top-nav-bar 0.9s ease-in-out 0s 1 normal;
+    border-radius: 10px;
+}
+/* background picture */
+body {
+    background-image: url('Blue Gradient Modern Minimal Art and Design Online Portfolio.png');
+    font-family: "Space Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+/* navigation bar components */
+.nav_components {
+    height: 27;
+    width: 120px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    /* border-radius: 5px; */
+    align-self: center;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+/* hover effect for navigation elements */
+.nav_components:hover {
+    background-color: #38b6ff;
+    color: black;
+    text-align: center;
+    /* /* border-bottom:5px #38b6ff solid; */
+    transition-duration: 0.5s;
+    /* transform-origin: left; */ 
+}
+ 
+.Title {
+    height: 49;
+    width: 100px;
+    background-color: #38b6ff;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-weight: 40px;
+    text-decoration: none;
+}
+.myPic{
+    height: 970px;
+    width: 650px;
+    position: absolute;
+    top: -240px;
+    left: 850px;
+    z-index: -2;
+    /* animation: from-right-mypic 1s ease-in-out 0s 1 normal; */
+}
+.hello{
+    color: #38b6ff;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+}
+.card{
+    display: flex;
+    height: 400px;
+    width: 600px;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    border: 0px;
+    background: none;
+    flex-wrap: nowrap;
+    animation:from-left-card 0.9s ease-in-out 0s 1 normal ;
+}
+.myself{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: 30;
+    font-weight: 800;
+    font-size: 80px;
+    color:white;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+
+@keyframes from-top-nav-bar {
+    from{
+        top:-400px;
+    }
+    to{
+        top:50px;
+    }
+}
+
+@keyframes from-left-card {
+    from {
+        left: -1400px;
+    }
+
+    to {
+        left: 150px;
+    }
+}
+
+@keyframes from-right-mypic {
+    from {
+        left: 2500px;
+    }
+
+    to {
+        left: 850px;
+    }
+}
+
+@keyframes under-line {
+    from{
+        border-bottom-color:none ;
+    }
+    to{
+        border-bottom-color: #38b6ff;
+    }
+}
