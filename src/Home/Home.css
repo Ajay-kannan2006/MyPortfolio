@@ -5,14 +5,13 @@ body {
     font-family: "Gothic A1", serif;
     font-weight: 400;
     font-style: normal;
-
-    /* align-items: center; */
 }
 
 #home {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, #D51071, #380E48);
+    /* background: linear-gradient(to right, #D51071, #380E48); */
+    background-color: #F5EFFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,9 +22,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
-    color: white;
+    /* color: white; */
     justify-content: space-between;
 }
 
@@ -45,25 +44,25 @@ body {
 }
 
 .elements li {
-    height: 50%;
     text-align: center;
-    color: white;
-    border: 5px transparent rgba(0, 0, 0, .4);
+    border: 2px solid #F5EFFF;
     cursor: pointer;
+    transition-duration: 1s;
 }
 
 .elements li:hover {
-    border-bottom: 5px solid #D51071;
-
+    border-bottom: 2px solid;
+    /* transition: all; */
 }
 
 
 
 .my-name {
-    font-family: "Tangerine", serif;
-    font-weight: 700;
+    margin-left: 2rem;
+    font-family: "Krona One", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 5vh;
 }
 
 #sidebar-active {
@@ -75,39 +74,38 @@ body {
     display: none;
 }
 
-@media (max-width:990px) {
-    .elements {
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-}
 
 #left-home {
     height: 80vh;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F5EFFF;
+    /* Light Lavender Background */
+    /* padding: 20px; */
 }
 
-#right-home {
-    height: 80vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: black; */
-}
+
 
 #home-footer {
     height: 10vh;
     width: 100%;
     text-align: center;
     line-height: 10vh;
+    background-color: #F5EFFF;
 }
 
 .profile-picture {
-    height: 425px;
-    width: 425px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
+}
+
+.profile-picture img:hover {
+    border-radius: 10px;
+
 }
 
 .profile-picture img {
@@ -115,8 +113,132 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    transition-duration: 1s;
 }
 
+/* Container Styling */
+
+
+#right-home {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EFFF;
+}
+
+/* Content Styling */
+.home-content {
+    width: 80%;
+    margin-left: 1%;
+}
+
+.home-content h1 {
+    font-size: 2rem;
+    color: #333333;
+    /* Dark Gray */
+}
+
+.home-content h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #A294F9;
+    /* Muted Purple */
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #555555;
+    /* Medium Gray */
+    line-height: 1.6;
+}
+
+/* Highlight Class for Text */
+.highlight {
+    color: #CDC1FF;
+    font-weight: bold;
+}
+
+.home-buttons {
+    margin-top: 20px;
+}
+
+.home-buttons:hover {
+    .btn-icons {
+        margin: 3%;
+    }
+}
+
+.btn-icons {
+    /* height: 2000px;
+    width: 2000px;
+    border: 2px solid #CDC1FF; */
+    color: #A294F9;
+    margin-left: 2%;
+    transition-duration: 0.5s;
+}
+
+.leet {
+    font-size: x-large;
+}
+
+/* .btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+
+
+
+/* .btn-primary {
+    background-color: #CDC1FF;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #A294F9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #CDC1FF;
+    color: #CDC1FF;
+}
+
+.btn-secondary:hover {
+    background-color: #CDC1FF;
+    color: #ffffff;
+} */
+
+@media (max-width:990px) {
+    #home {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #left-home,
+    #right-home {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .profile-picture {
+        height: 300px;
+        width: 300px;
+    }
+}
 
 
 * {
